@@ -43,8 +43,8 @@ lib/test/evaluation/local.py  # paths about testing
 
 ```
 
-python tracking/train.py --script mynet --config baseline --save_dir . --mode single --script_prv cttrak --config_prv baseline  
-python tracking/train.py --script mynet --config baseline_large --save_dir . --mode single --script_prv cttrak --config_prv baseline_large  
+python tracking/train.py --script videotrack --config baseline --save_dir . --mode single --script_prv videotrack --config_prv baseline  
+python tracking/train.py --script videotrack --config baseline_large --save_dir . --mode single --script_prv videotrack --config_prv baseline_large  
 
 ```
 
@@ -60,7 +60,7 @@ python tracking/test.py videotrack baseline_large-test-4.7-60-200-sigmoid1.8-10-
 ```
 - LaSOT
 ```
-python tracking/test.py videotrack SUCCESS-baseline-240-700-sigmoid3.0--dataset lasot --threads 32
+python tracking/test.py videotrack baseline-240-700-sigmoid3.0--dataset lasot --threads 32
 python tracking/test.py videotrack baseline_large-test-4.9-150-700-sigmoid1.5 --dataset lasot --threads 32
 ```
 - GOT10K-test
@@ -87,7 +87,7 @@ python tracking/analysis_results.py {script}  {config}  {dataset_name}
 **For example**
 
 ```
-python tracking/analysis_results.py mynet baseline trackingnet
+python tracking/analysis_results.py videotrack baseline trackingnet
 ```
 
 **Pack TrackingNet**
