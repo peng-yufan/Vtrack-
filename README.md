@@ -1,4 +1,4 @@
-
+Model can be downloaded from [BaiduYun](https://pan.baidu.com/s/1GQKaUCggponnYGPELS-QIA) (password: hrr7)
 ## Install the environment
 
 ```
